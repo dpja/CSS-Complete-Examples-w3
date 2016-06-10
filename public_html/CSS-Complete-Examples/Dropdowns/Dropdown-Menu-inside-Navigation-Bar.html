@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+           <link rel="stylesheet" href="../../css-reset.css">
+           <style>
+               nav ul{
+                   width:100%;
+                   background: black;
+                 
+
+               }
+               nav ul> li{
+                  display: inline-block; 
+               }
+               nav ul li a{
+                   display:block;
+                   font-size:25px;
+                  line-height:25px;
+                   padding: 18px 28px;
+                     color:white;
+                     text-decoration: none;
+               } 
+               nav ul li:hover{
+                   
+                   background: red;
+               }
+               .dropdown{
+                   position: relative;
+                   
+               }
+               .dropdown > ul{
+                   position:absolute;
+                  display: none;
+                   width:130px;
+                   height:150px;
+               }
+               .dropdown > ul li{
+                    width:130px;
+               }
+               .dropdown > ul li a{
+                   width:100%;
+                   display:block;
+                   padding: 8px 16px;
+               }
+               .dropdown:hover >ul {
+                   display:block;
+               }
+           </style>
+    </head>
+    <body>
+        <div class="navbar">
+            <nav>
+	<ul>
+		<li><a href="#">Home</a></li>
+		<li><a href="#">About</a></li>
+                <li class="dropdown"><a href="#">Clients</a>
+                    <ul>
+                      <li><a href="#">Link 1</a></li>
+                      <li><a href="#">Link 2</a></li>
+                      <li><a href="#">Link 3</a></li>
+                    </ul>
+                </li>
+		<li><a href="#">Contact Us</a></li>
+	</ul>
+</nav>
+            
+            
+            
+        </div>
+    </body>
+</html>
